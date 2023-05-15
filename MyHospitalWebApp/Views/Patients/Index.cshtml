@@ -1,0 +1,101 @@
+﻿@model MyHospitalWebApp.Models.BindingModels.FilteredPatientsList
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Patients</h1>
+
+
+<form asp-action="Index">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <label class="form-check-label col-3">
+            <input class="form-check-input group" asp-for="filter.orderByFullName" /> @Html.DisplayNameFor(model => model.filter.orderByFullName)
+        </label>
+
+        <label class="form-check-label col-3">
+            <input class="form-check-input group" asp-for="filter.orderByDob" /> @Html.DisplayNameFor(model => model.filter.orderByDob)
+        </label>
+        <label class="form-check-label col-2">
+            <input class="form-check-input" asp-for="filter.desc" /> @Html.DisplayNameFor(model => model.filter.desc)
+        </label>
+    </div>
+
+
+    <br />
+    <div class="row">
+        <div class="col-4">
+            <label asp-for="filter.fullNameFilter" class="control-label"></label>
+            <input asp-for="filter.fullNameFilter" class="form-control" />
+        </div>
+        <div class="col-4">
+            <label asp-for="filter.dobFilter" class="control-label"></label>
+            <input asp-for="filter.dobFilter" class="form-control" />
+        </div>
+        <div class="col-4">
+        <input type="submit" value="Filter" class="btn text-white" style="background-color:forestgreen" />
+        <a class="btn btn-secondary" asp-action="Index">No filters</a>
+        </div>
+    </div>
+</form>
+<br />
+
+<div class="row">
+    @foreach (var item in Model.patients)
+    {
+        <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100" style="background-color:forestgreen">
+                <a asp-action="Details" asp-route-id="@item.Id"><img class="card-img-top" src="@($"https://robohash.org/{item.firstName + item.lastName}.png")" alt=""></a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a class="text-white" asp-action="Details" asp-route-id="@item.Id">@(item.firstName +" "+ item.lastName)</a>
+                    </h4>
+                    <div class="card-text text-white">
+                        @Html.DisplayNameFor(modelItem => item.PIC) : <b>@Html.DisplayFor(modelItem => item.PIC)</b><br>
+                        @Html.DisplayNameFor(modelItem => item.DOB) : <b>@item.DOB.ToShortDateString()</b><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+
+@if (User.IsInRole("Doctor"))
+{
+    <a class="btn text-white" style="background-color:forestgreen" asp-action="DownloadFile">Download Patients Excel</a>
+    <button class="btn text-white" style="background-color:forestgreen" id="downloadBtn">Download Patients Excel with JS</button>
+    <a class="btn text-white" style="background-color:forestgreen" asp-action="DownloadFileSP">Download Patients Excel with SP</a>
+}
+
+@section Scripts
+    {
+    <script>
+        (function() {
+            // your page initialization code here
+            // the DOM will be available here
+            var btn = document.getElementById("downloadBtn");
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href += '/DownloadFile';
+            });
+
+
+            var checkBoxes = document.getElementsByClassName('group')
+
+            for (var i = 0; i < checkBoxes.length; i++) {
+                checkBoxes[i].addEventListener('change', event => {
+                    if (event.currentTarget.checked) {
+                        for (var j = 0; j < checkBoxes.length; j++) {
+                            if (checkBoxes[j] != event.currentTarget) {
+                                checkBoxes[j].checked = false;
+                            }
+                        }
+                    }
+                }, false);
+            }
+        })();
+    </script>
+}

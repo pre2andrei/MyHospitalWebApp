@@ -1,0 +1,39 @@
+﻿@model HospitalWebApp.Models.Diagnostic
+
+@{
+    ViewData["Title"] = "Create";
+}
+<br />
+<h4>Add diagnostic</h4>
+<div class="row">
+    <div class="col-md-4">
+        @if((ViewBag.diseaseid as IEnumerable<SelectListItem>).Count() == 0)
+            {
+            <div> There are no diseases in the database!</div>
+        }
+        else
+        {
+            <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for=patientId />
+            <div class="form-group">
+                <label asp-for="diseaseId" class="control-label"></label>
+                <select asp-for="diseaseId" class ="form-control" asp-items="ViewBag.diseaseId"></select>
+            </div>
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn text-white" style="background-color:forestgreen;" />
+                <a class="btn btn-secondary" asp-controller="Patients" asp-action="Details" asp-route-id="@Model.patientId">Back</a>
+            </div>
+        </form>
+        }
+        
+    </div>
+</div>
+
+    
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

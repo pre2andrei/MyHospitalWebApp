@@ -1,0 +1,64 @@
+﻿@model IEnumerable<HospitalWebApp.Models.Diagnostic>
+
+@{
+    ViewData["Title"] = "Diagnostics";
+}
+
+<h1>Diagnostics</h1>
+@if (User.IsInRole("Doctor"))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+@if (Model.Count() == 0)
+{
+    <p>No diagnostics!</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                @if (!User.IsInRole("Patient"))
+                {
+                    <th>
+                        @Html.DisplayNameFor(model => model.Patient)
+                    </th>
+                }
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Disease)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    @if (!User.IsInRole("Patient"))
+                    {
+                        <td>
+                            @(item.Patient.firstName + " " + item.Patient.lastName)
+                        </td>
+                    }
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Disease.Name)
+                    </td>
+                    <td>
+                        @if (User.IsInRole("Doctor"))
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> @:(|)
+                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> @:(|)
+                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                        }
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}

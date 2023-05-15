@@ -1,0 +1,231 @@
+﻿@model MyHospitalWebApp.Models.BindingModels.FilteredAppointmentsList
+
+
+@{
+    ViewData["Title"] = "Appointments";
+}
+
+<h1>Appointments  <a class="btn text-white" style="background-color:forestgreen" asp-action="Create">+</a></h1>
+<br />
+<form asp-action="Index">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        @if (User.IsInRole("Patient"))
+        {
+            <label class="form-check-label col-3">
+                <input class="form-check-input group " asp-for="filter.orderByDoctorName" /> @Html.DisplayNameFor(model => model.filter.orderByDoctorName)
+            </label>
+        }
+        else
+        {
+            <label class="form-check-label col-3">
+                <input class="form-check-input group " asp-for="filter.orderByPatientName" /> @Html.DisplayNameFor(model => model.filter.orderByPatientName)
+            </label>
+        }
+        <label class="form-check-label col-3">
+            <input class="form-check-input group" asp-for="filter.orderByAppointedTime" /> @Html.DisplayNameFor(model => model.filter.orderByAppointedTime)
+        </label>
+        <label class="form-check-label col-3">
+            <input class="form-check-input group" asp-for="filter.orderRoomNr" /> @Html.DisplayNameFor(model => model.filter.orderRoomNr)
+        </label>
+        <label class="form-check-label col-3">
+            <input class="form-check-input" asp-for="filter.desc" /> @Html.DisplayNameFor(model => model.filter.desc)
+        </label>
+    </div>
+    <br />
+    <div class="row">
+        @if (User.IsInRole("Patient"))
+        {
+            <div class="col-3">
+                <label asp-for="filter.doctorNameFilter" class="control-label"></label>
+                <input asp-for="filter.doctorNameFilter" class="form-control" />
+            </div>
+
+        }
+        else
+        {
+            <div class="col-3">
+                <label asp-for="filter.patientNameFilter" class="control-label"></label>
+                <input asp-for="filter.patientNameFilter" class="form-control" />
+            </div>
+        }
+        <div class="col-3">
+            <label asp-for="filter.dateFilter" class="control-label"></label>
+            <input asp-for="filter.dateFilter" class="form-control" />
+        </div>
+        <div class="col-3">
+            <label asp-for="filter.roomNrFilter" class="control-label"></label>
+            <input asp-for="filter.roomNrFilter" class="form-control" />
+        </div>
+        <div class="col-3" style="vertical-align:bottom">
+            <input type="submit" value="Filter" class="btn text-white" style="background-color:forestgreen" />
+            <a class="btn btn-secondary" asp-action="Index">No filters</a>
+        </div>
+    </div>
+    <br />
+
+
+</form>
+
+@if (Model.upcomingAppointments.Count == 0)
+{
+    <p>No upcomming appointments!</p>
+}
+else
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @if (User.IsInRole("Doctor"))
+                    {
+                        @Html.DisplayNameFor(model => model.upcomingAppointments.First().Patient)
+                    }
+                    @if (User.IsInRole("Patient"))
+                    {
+                        @Html.DisplayNameFor(model => model.upcomingAppointments.First().Doctor)
+                    }
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.upcomingAppointments.First().AppointedTime)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.upcomingAppointments.First().RoomNr)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.upcomingAppointments)
+            {
+                <tr>
+                    <td>
+                        @if (User.IsInRole("Doctor"))
+                        {
+                            @(item.Patient.firstName + " " + item.Patient.lastName)
+                        }
+                        @if (User.IsInRole("Patient"))
+                        {
+                            @(item.Doctor.firstName + " " + item.Doctor.lastName)
+                        }
+                    </td>
+                    <td>
+                        @item.AppointedTime.ToString("dd-MM-yyyy - HH:mm")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomNr)
+                    </td>
+                    <td>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+<h4>
+    Past Appointments
+</h4>
+@if (Model.oldAppointments.Count == 0)
+{
+    <p>No Old Appointments!</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th style="visibility:hidden">
+                    @if (User.IsInRole("Doctor"))
+                    {
+                        @Html.DisplayNameFor(model => model.oldAppointments.First().Patient)
+                    }
+                    @if (User.IsInRole("Patient"))
+                    {
+                        @Html.DisplayNameFor(model => model.oldAppointments.First().Doctor)
+                    }
+                </th>
+                <th style="visibility:hidden">
+                    @Html.DisplayNameFor(model => model.oldAppointments.First().AppointedTime)
+                </th>
+                <th style="visibility:hidden">
+                    @Html.DisplayNameFor(model => model.oldAppointments.First().RoomNr)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.oldAppointments)
+            {
+                <tr>
+                    <td>
+                        @if (User.IsInRole("Doctor"))
+                        {
+                            @(item.Patient.firstName + " " + item.Patient.lastName)
+                        }
+                        @if (User.IsInRole("Patient"))
+                        {
+                            @(item.Doctor.firstName + " " + item.Doctor.lastName)
+                        }
+                    </td>
+                    <td>
+                        @item.AppointedTime.ToString("dd-MM-yyyy - HH:mm")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.RoomNr)
+                    </td>
+                    <td>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Details" asp-route-id="@item.Id">Details</a>
+                        <a class="btn text-white" style="background-color:forestgreen" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@if (Model.upcomingAppointments.Count == 0 && Model.oldAppointments.Count == 0)
+{
+    <div class="btn btn-secondary">Download Appintments Excel</div>
+    <div class="btn btn-secondary">Download Appintments Excel with JS</div>
+    <div class="btn btn-secondary">Download Appintments Excel with SP</div>
+}
+else
+{
+    <a class="btn text-white" style="background-color:forestgreen" asp-action="DownloadFile">Download Appintments Excel</a>
+    <button class="btn text-white" style="background-color:forestgreen" id="downloadBtn">Download Appintments Excel with JS</button>
+    <a class="btn text-white" style="background-color:forestgreen" asp-action="DownloadFileSP">Download Appintments Excel with SP</a>
+}
+@section Scripts
+    {
+    <script>
+        (function() {
+            var btn = document.getElementById("downloadBtn");
+            btn.onclick = function() {
+                window.location.href += '/DownloadFile';
+            }
+
+            var checkBoxes = document.getElementsByClassName('group')
+
+            for (var i = 0; i < checkBoxes.length; i++) {
+                checkBoxes[i].addEventListener('change', event => {
+                    if (event.currentTarget.checked) {
+                        for (var j = 0; j < checkBoxes.length; j++) {
+                            if (checkBoxes[j] != event.currentTarget) {
+                                checkBoxes[j].checked = false;
+                            }
+                        }
+                    }
+                }, false);
+            }
+        })();
+    </script>
+}
+
+

@@ -1,0 +1,55 @@
+﻿@model HospitalWebApp.Models.Doctor
+
+@{
+    ViewData["Title"] = "Details";
+}
+<br />
+<h2>
+   @(Model.firstName + " "+ Model.lastName) <a class="btn text-white" style="background-color:forestgreen;" asp-action="Edit" asp-route-id="@Model?.Id">Edit</a>
+</h2>
+<br />
+<dl class="row">
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.PIC)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.PIC)
+    </dd>
+</dl>
+
+<h1>Doctors Specialities <a class="btn text-white" style="background-color:forestgreen;" asp-controller="Doctor_Speciality" asp-action="Create" asp-route-docId="@Model.Id">+</a></h1>
+
+@if (Model.Doctors_Specialities.Count == 0)
+{
+    <p>
+        You have no Speciality!
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Doctors_Specialities.First().Speciality)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Doctors_Specialities)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Speciality.Name)
+                    </td>
+                    <td>
+                        <a class="btn text-white" style="background-color:forestgreen;" asp-controller="Doctor_Speciality" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+}
+

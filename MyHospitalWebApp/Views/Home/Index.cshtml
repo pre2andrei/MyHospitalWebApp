@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center ">
+    @if (!User.Identity.IsAuthenticated)
+    {
+                <a class="btn text-white" style="background-color:forestgreen;" asp-action="CreateIdentityPatient">Register As Patient</a>
+                <a class="btn text-white" style="background-color:forestgreen;" asp-action="CreateIdentityDoctor">Register As Doctor</a>
+    }
+    else
+    {
+        <br />
+        <br />
+        <img src="~/welcome.png"/>
+    }
+</div>

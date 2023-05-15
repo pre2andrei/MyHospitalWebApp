@@ -1,0 +1,261 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MyHospitalWebApp
+build_property.RootNamespace = MyHospitalWebApp
+build_property.ProjectDir = D:\Workspace\.net\hope\MyHospitalWebApp\MyHospitalWebApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Workspace\.net\hope\MyHospitalWebApp\MyHospitalWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Appointments/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Appointments/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Appointments/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Appointments/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Appointments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Cars/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Cars/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Cars/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Cars/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Cars/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diagnostics/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diagnostics/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diagnostics/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diagnostics/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diagnostics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ25vc3RpY3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diseases/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diseases/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diseases/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diseases/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Diseases/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzZWFzZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctor_Speciality/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yX1NwZWNpYWxpdHlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctor_Speciality/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yX1NwZWNpYWxpdHlcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctor_Speciality/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yX1NwZWNpYWxpdHlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctor_Speciality/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yX1NwZWNpYWxpdHlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Doctor_Speciality/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yX1NwZWNpYWxpdHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Home/CreateIdentityDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVJZGVudGl0eURvY3Rvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Home/CreateIdentityPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGVJZGVudGl0eVBhdGllbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Patients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Patients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Patients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Patients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Patients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Specialities/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0aWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Specialities/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0aWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Specialities/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0aWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Specialities/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0aWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Specialities/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BlY2lhbGl0aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptoms/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptoms/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptoms/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptoms/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptoms/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptom_Disease/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbV9EaXNlYXNlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptom_Disease/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbV9EaXNlYXNlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptom_Disease/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbV9EaXNlYXNlXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptom_Disease/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbV9EaXNlYXNlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Symptom_Disease/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ltcHRvbV9EaXNlYXNlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Workspace/.net/hope/MyHospitalWebApp/MyHospitalWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-em55ofga7b
